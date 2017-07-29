@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 export default class App extends Component {
   render() {
     return (
-      <div>Hello! Boilerplate code</div>
+      <div>
+        <h1>Hello! Boilerplate code</h1>
+      </div>
     );
   }
 }
