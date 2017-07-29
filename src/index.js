@@ -20,5 +20,5 @@ ReactDOM.render(
     <div style={styles.divStyles}>
       <App />
     </div>
-  </Provider>
-  , document.querySelector('.container'));
+  </Provider>, document.querySelector('.container'),
+);
