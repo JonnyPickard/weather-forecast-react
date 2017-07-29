@@ -7,3 +7,4 @@ npm-debug.log
 *.iml
 /.idea
 .notes.md
+build_and_run.sh

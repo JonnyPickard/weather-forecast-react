@@ -4,6 +4,9 @@ import { Provider } from 'react-redux';
 
 import App from './components/app';
 
+const API_KEY = process.env;
+console.log(API_KEY);
+
 ReactDOM.render(
   <Provider>
     <App />
