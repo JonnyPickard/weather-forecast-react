@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import Chart from '../components/chart';
 import GoogleMap from '../components/google_map';
 
@@ -39,6 +40,10 @@ class WeatherTable extends Component {
     );
   }
 }
+
+WeatherTable.propTypes = {
+  weather: PropTypes.object.isRequired,
+};
 
 function mapStateToProps({ weather }) {
   return { weather };

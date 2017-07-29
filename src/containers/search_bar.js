@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types';
 import { fetchWeather } from '../actions/index';
 
 class SearchBar extends Component {
@@ -40,6 +41,10 @@ class SearchBar extends Component {
     );
   }
 }
+
+SearchBar.propTypes = {
+  fetchWeather: PropTypes.func.isRequired,
+};
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchWeather }, dispatch);
