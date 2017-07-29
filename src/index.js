@@ -9,8 +9,16 @@ import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
 
+const styles = {
+  divStyles: {
+    paddingTop: 10,
+  },
+};
+
 ReactDOM.render(
   <Provider store={createStoreWithMiddleware(reducers)}>
-    <App />
+    <div style={styles.divStyles}>
+      <App />
+    </div>
   </Provider>
   , document.querySelector('.container'));

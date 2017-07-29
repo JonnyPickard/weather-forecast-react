@@ -6,7 +6,9 @@ module.exports = {
     "react/forbid-prop-types": 0,
     "jsx-a11y/no-noninteractive-element-interactions": 0,
     "class-methods-use-this": 0,
-    "react/prefer-stateless-function": 0
+    "react/prefer-stateless-function": 0,
+    "no-use-before-define": 0,
+    "react/prop-types": 0
   },
   "env": {
     "browser": true
